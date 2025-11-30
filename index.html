@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio with Resume Builder</title>
+    <title>Rochelle B Galpao - Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,12 @@
         <a href="#home1" class="active menu-link">Home</a>
         <a href="#services" class="menu-link">Services</a>
         <a href="#resume" class="menu-link">Resume</a>
-        <a href="#contact" class="menu-link">Contact Us</a>
+        <a href="#contact" class="menu-link">Contact</a>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
     </nav>
   </header>
 
@@ -30,12 +35,12 @@
       <p>I am attending Pangasinan State University San Carlos Campus and I'm taking Bachelor of Science in Information Technology major in Web and Mobile Application</p>
       <div class="btn-sci">
          <a href="#" class="button" id="download-cv">Download CV</a>
-         <a href="#contact" class="button" id="hire-me">Hire Me</a>
+         <a href="#contact" class="button secondary" id="hire-me">Hire Me</a>
          <div class="sci">
-        <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
-        <a href="mailto:rochellebobisgalpao@gmail.com"><i class='bx bx-envelope'></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+          <a href="mailto:rochellebobisgalpao@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
          </div>
       </div> 
     </div>
@@ -56,123 +61,141 @@
     <div class="services-box">
         <div class="icon">
           <i class='bx bx-code-alt'></i>
-          <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
+          <a href="#web-dev" class="service-link"><i class='bx bx-arrow-back'></i></a>
         </div>
-        <h3>Web development</h3>
-        <p>I specialize in building responsive, modern websites that prioritize user experience and performance. With proficiency in HTML, CSS, JavaScript, and frameworks like React, I create interactive and dynamic websites tailored to your needs.</p>
-        <button class="service-btn">Learn More</button>
+        <h3>Web Development</h3>
+        <p>I specialize in building responsive, modern websites that prioritize user experience and performance. With proficiency in HTML, CSS, JavaScript, and frameworks like React.</p>
+        <button class="service-btn" data-service="web-development">Learn More</button>
     </div>
 
     <div class="services-box">
       <div class="icon">
         <i class='bx bxs-paint'></i>
-        <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
+        <a href="#ui-ux" class="service-link"><i class='bx bx-arrow-back'></i></a>
       </div>
-      <h3>UI/UX design</h3>
-      <p>I offer end-to-end UI/UX design services, including user research, wireframing, prototyping, and visual design. With a deep understanding of user needs, I create interfaces that are not only visually appealing but also highly functional and easy to use.</p>
-      <button class="service-btn">Learn More</button>
+      <h3>UI/UX Design</h3>
+      <p>I offer end-to-end UI/UX design services, including user research, wireframing, prototyping, and visual design. With a deep understanding of user needs.</p>
+      <button class="service-btn" data-service="ui-ux-design">Learn More</button>
   </div>
 
   <div class="services-box">
     <div class="icon">
       <i class='bx bx-palette'></i>
-      <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
+      <a href="#graphic-design" class="service-link"><i class='bx bx-arrow-back'></i></a>
     </div>
-    <h3>Graphic design</h3>
-    <p>My graphic design process is built around collaboration and creativity. I focus on understanding your brands values and goals to produce designs that not only look great but also communicate your message clearly and effectively.</p>
-    <button class="service-btn">Learn More</button>
+    <h3>Graphic Design</h3>
+    <p>My graphic design process is built around collaboration and creativity. I focus on understanding your brands values and goals to produce designs.</p>
+    <button class="service-btn" data-service="graphic-design">Learn More</button>
 </div>
 
 <div class="services-box">
   <div class="icon">
     <i class='bx bx-trending-up' ></i>
-    <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
+    <a href="#seo" class="service-link"><i class='bx bx-arrow-back'></i></a>
   </div>
-  <h3>SEO</h3>
-  <p>I offer comprehensive SEO services, including keyword research, on-page optimization, link building, content strategy, and performance analysis. My goal is to help businesses increase their search engine rankings and achieve sustainable growth in traffic and conversions.</p>
-  <button class="service-btn">Learn More</button>
+  <h3>SEO Optimization</h3>
+  <p>I offer comprehensive SEO services, including keyword research, on-page optimization, link building, content strategy, and performance analysis.</p>
+  <button class="service-btn" data-service="seo">Learn More</button>
 </div>
   </div>
 </section>
 
 <!--resume selection-->
 <section id="resume" class="resume">
+  <h2 class="heading">My <span>Resume</span></h2>
   <div class="resume-container">
     <div class="resume-box">
-      <h2>Why Hire Me?</h2>
+      <h3>Why Hire Me?</h3>
       <p class="desc">I bring a strong foundation in networking and web application development, paired with a creative approach to designing user-friendly interfaces.</p>
-      <button class="resume-btn active" data-target="experience">Experience</button>
-      <button class="resume-btn" data-target="education">Education</button>
-      <button class="resume-btn" data-target="skills">Skills</button>
-      <button class="resume-btn" data-target="about">About Me</button>
+      <div class="resume-buttons">
+        <button class="resume-btn active" data-target="experience">Experience</button>
+        <button class="resume-btn" data-target="education">Education</button>
+        <button class="resume-btn" data-target="skills">Skills</button>
+        <button class="resume-btn" data-target="about">About Me</button>
+      </div>
     </div>
 
-    <div class="resume-box">
+    <div class="resume-content">
       <div class="resume-detail active" id="experience">
-        <h3 class="heading">My<span>Experience</span></h3>
-        <p class="desc">For now I'm exploring on how to code and building my portfolio with real projects.</p>
+        <h4 class="sub-heading">My <span>Experience</span></h4>
+        <p class="desc">Currently building my experience through personal projects and academic work.</p>
         <div class="experience-item">
-          <h4>Freelance Web Developer</h4>
+          <h5>Freelance Web Developer</h5>
           <p class="date">2023 - Present</p>
-          <p>Creating responsive websites for small businesses and personal projects.</p>
+          <p>Creating responsive websites for small businesses and personal projects using modern web technologies.</p>
         </div>
         <div class="experience-item">
-          <h4>Student Projects</h4>
+          <h5>Student Developer</h5>
           <p class="date">2022 - 2023</p>
-          <p>Developed various web applications as part of my academic curriculum.</p>
+          <p>Developed various web applications as part of academic curriculum and personal learning projects.</p>
         </div>
       </div>
 
       <div class="resume-detail" id="education">
-        <h3 class="heading">My <span>Education</span></h3>
-        <h2>Rochelle B. Galpao</h2>
-        <div class="institution">
-          <div class="degree"> 
-            <h4>Bachelor of Science in Information Technology major in Web and Mobile Application</h4>
-          </div>
-          <div class="details">
-            <p><strong>Elementary:</strong> Real Elementary School - 2011-2016</p>
-            <p><strong>Secondary:</strong> Real National High School - 2016-2019</p>
-            <p><strong>Senior High:</strong> Real National High School - 2019-2021</p>
-            <p><strong>Tertiary:</strong> Pangasinan State University - San Carlos Campus - 2024-present</p>
-          </div>
+        <h4 class="sub-heading">My <span>Education</span></h4>
+        <div class="education-item">
+          <h5>Pangasinan State University - San Carlos Campus</h5>
+          <p class="date">2024 - Present</p>
+          <p>Bachelor of Science in Information Technology<br>Major in Web and Mobile Application</p>
+        </div>
+        <div class="education-item">
+          <h5>Real National High School</h5>
+          <p class="date">2019 - 2021</p>
+          <p>Senior High School</p>
+        </div>
+        <div class="education-item">
+          <h5>Real National High School</h5>
+          <p class="date">2016 - 2019</p>
+          <p>Secondary Education</p>
         </div>
       </div>
 
       <div class="resume-detail" id="skills">
-        <h3 class="heading">My <span>Skills</span></h3>
-          <div class="person-skills">
-            <h2 class="desc">Rochelle Galpao's Skills</h2>
-            <div class="skills-grid">
-              <div class="skill-category">
-                <h4>Technical Skills</h4>
-                <p>HTML5 & CSS3</p>
-                <p>JavaScript</p>
-                <p>Responsive Design</p>
-                <p>UI/UX Design</p>
-              </div>
-              <div class="skill-category">
-                <h4>Soft Skills</h4>
-                <p>Team Collaboration</p>
-                <p>Problem Solving</p>
-                <p>Communication</p>
-                <p>Time Management</p>
-              </div>
+        <h4 class="sub-heading">My <span>Skills</span></h4>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h5>Technical Skills</h5>
+            <div class="skill-item">
+              <span>HTML5 & CSS3</span>
+              <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>JavaScript</span>
+              <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Responsive Design</span>
+              <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
             </div>
           </div>
+          <div class="skill-category">
+            <h5>Soft Skills</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">Team Collaboration</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Time Management</span>
+            </div>
+          </div>
+        </div>
       </div>
         
       <div class="resume-detail" id="about">
-        <h3 class="heading">About <span>Me!</span></h3>
-        <p class="desc">Welcome to Coderox! I am a dedicated professional committed to delivering high-quality digital solutions.
-          Founded in 2024, my mission is to help businesses and individuals create impactful online experiences through modern web design, development, and creative solutions.</p>
-          
-          <p>At Coderox, I value integrity, innovation, and customer satisfaction.
-            My expertise includes services such as portfolio building, digital marketing, and graphic design, tailored to meet the unique needs of each client.</p>
-            
-          <p>Whether you're a small business or an individual looking to build a strong online presence, I am here to help. 
-              Let's turn your vision into reality!</p>
-            <h4>Contact us today to get started!</h4>
+        <h4 class="sub-heading">About <span>Me!</span></h4>
+        <p class="desc">Welcome to my portfolio! I am a dedicated IT student passionate about creating digital solutions that make a difference.</p>
+        <p>I believe in the power of technology to transform ideas into reality. With a strong foundation in web development and design, I'm committed to delivering high-quality work that exceeds expectations.</p>
+        <p>When I'm not coding, you can find me exploring new technologies, working on personal projects, or continuously learning to improve my skills.</p>
+        <div class="personal-info">
+          <div class="info-item">
+            <strong>Location:</strong> Urbiztondo, Pangasinan
+          </div>
+          <div class="info-item">
+            <strong>Email:</strong> rochellebobisgalpao@gmail.com
+          </div>
+          <div class="info-item">
+            <strong>Phone:</strong> (+63) 9922349306
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -181,16 +204,16 @@
 
 <!--contact us selection-->
 <section id="contact" class="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
   <div class="contact-container">
     <div class="contact-box">
-      <h2>Let's Work Together</h2>
-      <p class="desc">I am always open to new opportunities, whether it's for personal projects, collaborations, or professional endeavors. If you're looking for a passionate and creative partner to help bring your ideas to life, I'd love to connect with you!
-        Feel free to reach out to discuss how we can work together and make something amazing happen. I'm excited to hear about your vision and explore how we can collaborate!</p>
+      <h3>Let's Work Together</h3>
+      <p class="desc">I am always open to new opportunities, whether it's for personal projects, collaborations, or professional endeavors. Let's create something amazing together!</p>
       <div class="contact-detail">
         <i class='bx bxs-phone'></i>
         <div class="detail">
           <p>Phone</p>
-          <p>(+63) 9922349306 </p>
+          <p>(+63) 9922349306</p>
         </div>
       </div>
 
@@ -209,26 +232,54 @@
           <p>Urbiztondo, Pangasinan</p>
         </div>
       </div>
+      
+      <div class="contact-detail">
+        <i class='bx bxs-time'></i>
+        <div class="detail">
+          <p>Availability</p>
+          <p>Available for projects</p>
+        </div>
+      </div>
     </div>
 
     <div class="contact-box">
       <form id="contact-form">
-          <h2 class="heading">Contact <span> Us!</span></h2>
+          <h3 class="sub-heading">Send a <span>Message</span></h3>
           <div class="field-box">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number">
-            <input type="text" placeholder="Subject" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+            <div class="input-group">
+              <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+              <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+              <input type="tel" placeholder="Phone Number">
+            </div>
+            <div class="input-group full-width">
+              <input type="text" placeholder="Subject" required>
+            </div>
+            <div class="input-group full-width">
+              <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
           </div>
-          <button type="submit" class="btn">Send message</button>
+          <button type="submit" class="btn">Send Message</button>
       </form>
-      </div>
+    </div>
   </div>
 </section>
 
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2024 Rochelle B Galpao. All Rights Reserved.</p>
+    <div class="footer-sci">
+      <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+      <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+      <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+      <a href="mailto:rochellebobisgalpao@gmail.com"><i class='bx bx-envelope'></i></a>
+    </div>
+  </div>
+</footer>
+
 <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
