@@ -13,11 +13,11 @@
   <header>
     <a href="#" class="logo">CODEROX</a>
 
-    <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact Us</a>
+    <nav class="nav">
+        <a href="#home1" class="active menu-link">Home</a>
+        <a href="#services" class="menu-link">Services</a>
+        <a href="#resume" class="menu-link">Resume</a>
+        <a href="#contact" class="menu-link">Contact Us</a>
     </nav>
   </header>
 
@@ -29,12 +29,13 @@
       <h2>I'm a Front-End Developer</h2>
       <p>I am attending Pangasinan State University San Carlos Campus and I'm taking Bachelor of Science in Information Technology major in Web and Mobile Application</p>
       <div class="btn-sci">
-         <a href="#" class="button">Download CV</a>
+         <a href="#" class="button" id="download-cv">Download CV</a>
+         <a href="#contact" class="button" id="hire-me">Hire Me</a>
          <div class="sci">
-        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-        <a href="#"><i class='bx bxl-github'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bx-envelope'></i></a>
+        <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="mailto:rochellebobisgalpao@gmail.com"><i class='bx bx-envelope'></i></a>
          </div>
       </div> 
     </div>
@@ -42,99 +43,126 @@
     <div class="image-img">
       <div class="img-box">
         <div class="img-item">
-          <img src="profile.jpg" alt="image here">
+          <img src="profile.jpg" alt="Profile image of Rochelle B Galpao">
         </div>
       </div>
     </div>
   </section>
   
 <!--services selection-->
-<section class="services">
+<section id="services" class="services">
   <h2 class="heading">My<span> Services</span></h2>
   <div class="services-container">
     <div class="services-box">
         <div class="icon">
           <i class='bx bx-code-alt'></i>
-          <a href="#"><i class='bx bx-arrow-back'></i></a>
+          <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
         </div>
         <h3>Web development</h3>
         <p>I specialize in building responsive, modern websites that prioritize user experience and performance. With proficiency in HTML, CSS, JavaScript, and frameworks like React, I create interactive and dynamic websites tailored to your needs.</p>
+        <button class="service-btn">Learn More</button>
     </div>
 
     <div class="services-box">
       <div class="icon">
         <i class='bx bxs-paint'></i>
-        <a href="#"><i class='bx bx-arrow-back'></i></a>
+        <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
       </div>
       <h3>UI/UX design</h3>
       <p>I offer end-to-end UI/UX design services, including user research, wireframing, prototyping, and visual design. With a deep understanding of user needs, I create interfaces that are not only visually appealing but also highly functional and easy to use.</p>
+      <button class="service-btn">Learn More</button>
   </div>
 
   <div class="services-box">
     <div class="icon">
       <i class='bx bx-palette'></i>
-      <a href="#"><i class='bx bx-arrow-back'></i></a>
+      <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
     </div>
     <h3>Graphic design</h3>
     <p>My graphic design process is built around collaboration and creativity. I focus on understanding your brands values and goals to produce designs that not only look great but also communicate your message clearly and effectively.</p>
+    <button class="service-btn">Learn More</button>
 </div>
 
 <div class="services-box">
   <div class="icon">
     <i class='bx bx-trending-up' ></i>
-    <a href="#"><i class='bx bx-arrow-back'></i></a>
+    <a href="#" class="service-link"><i class='bx bx-arrow-back'></i></a>
   </div>
   <h3>SEO</h3>
   <p>I offer comprehensive SEO services, including keyword research, on-page optimization, link building, content strategy, and performance analysis. My goal is to help businesses increase their search engine rankings and achieve sustainable growth in traffic and conversions.</p>
+  <button class="service-btn">Learn More</button>
 </div>
   </div>
 </section>
 
 <!--resume selection-->
-<section class="resume">
+<section id="resume" class="resume">
   <div class="resume-container">
     <div class="resume-box">
       <h2>Why Hire Me?</h2>
       <p class="desc">I bring a strong foundation in networking and web application development, paired with a creative approach to designing user-friendly interfaces.</p>
-      <button class="resume-btn active">Experience</button>
-      <button class="resume-btn">Education</button>
-      <button class="resume-btn">Skills</button>
-      <button class="resume-btn">About Me</button>
+      <button class="resume-btn active" data-target="experience">Experience</button>
+      <button class="resume-btn" data-target="education">Education</button>
+      <button class="resume-btn" data-target="skills">Skills</button>
+      <button class="resume-btn" data-target="about">About Me</button>
     </div>
 
     <div class="resume-box">
-      <div class="resume-detail experience">
+      <div class="resume-detail active" id="experience">
         <h3 class="heading">My<span>Experience</span></h3>
-        <p class="desc"> For now Im exploring on how to code</p>
+        <p class="desc">For now I'm exploring on how to code and building my portfolio with real projects.</p>
+        <div class="experience-item">
+          <h4>Freelance Web Developer</h4>
+          <p class="date">2023 - Present</p>
+          <p>Creating responsive websites for small businesses and personal projects.</p>
+        </div>
+        <div class="experience-item">
+          <h4>Student Projects</h4>
+          <p class="date">2022 - 2023</p>
+          <p>Developed various web applications as part of my academic curriculum.</p>
+        </div>
       </div>
 
-      <div class="resume-detail education">
+      <div class="resume-detail" id="education">
         <h3 class="heading">My <span>Education</span></h3>
         <h2>Rochelle B. Galpao</h2>
         <div class="institution">
-          <div class="degree"> <h1>Bachelor of Science in Information Technology major in Web and Mobile Application </h1>
+          <div class="degree"> 
+            <h4>Bachelor of Science in Information Technology major in Web and Mobile Application</h4>
           </div>
           <div class="details">
-            <p>Elementary : Real Elementary School - 2011-2016 </p>
-            <p>Secondary : Real National High School - 2016-2019</p>
-            <p>Senior High: Real National High School - 2019-2021</p>
-            <p>Tertiary: Pangasinan State University - San Carlos Campus - 2024-present</p>
+            <p><strong>Elementary:</strong> Real Elementary School - 2011-2016</p>
+            <p><strong>Secondary:</strong> Real National High School - 2016-2019</p>
+            <p><strong>Senior High:</strong> Real National High School - 2019-2021</p>
+            <p><strong>Tertiary:</strong> Pangasinan State University - San Carlos Campus - 2024-present</p>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="resume-detail skills">
-      <h3 class="heading">My <span>Skills</span></h3>
-        <div class="person-skills">
-          <h2 class="desc">Rochelle Galpao's Skills</h2>
-            <p><strong>HTML & CSS:</strong> Crafting responsive web pages.</p>
-            <p><strong>JavaScript:</strong> Creating interactive web features.</p>
-            <p><strong>Team Collaboration:</strong> Working effectively with others.</p>
-        </div>
-    </div>
-      
-      <div class="resume-detail about">
+      <div class="resume-detail" id="skills">
+        <h3 class="heading">My <span>Skills</span></h3>
+          <div class="person-skills">
+            <h2 class="desc">Rochelle Galpao's Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Technical Skills</h4>
+                <p>HTML5 & CSS3</p>
+                <p>JavaScript</p>
+                <p>Responsive Design</p>
+                <p>UI/UX Design</p>
+              </div>
+              <div class="skill-category">
+                <h4>Soft Skills</h4>
+                <p>Team Collaboration</p>
+                <p>Problem Solving</p>
+                <p>Communication</p>
+                <p>Time Management</p>
+              </div>
+            </div>
+          </div>
+      </div>
+        
+      <div class="resume-detail" id="about">
         <h3 class="heading">About <span>Me!</span></h3>
         <p class="desc">Welcome to Coderox! I am a dedicated professional committed to delivering high-quality digital solutions.
           Founded in 2024, my mission is to help businesses and individuals create impactful online experiences through modern web design, development, and creative solutions.</p>
@@ -144,7 +172,7 @@
             
           <p>Whether you're a small business or an individual looking to build a strong online presence, I am here to help. 
               Let's turn your vision into reality!</p>
-            <h1>Contact us today to get started!</h1>
+            <h4>Contact us today to get started!</h4>
       </div>
     </div>
   </div>
@@ -152,7 +180,7 @@
 
 
 <!--contact us selection-->
-<seletion class="contact">
+<section id="contact" class="contact">
   <div class="contact-container">
     <div class="contact-box">
       <h2>Let's Work Together</h2>
@@ -184,20 +212,20 @@
     </div>
 
     <div class="contact-box">
-      <form action="">
+      <form id="contact-form">
           <h2 class="heading">Contact <span> Us!</span></h2>
           <div class="field-box">
             <input type="text" placeholder="Full Name" required>
-            <input type="Email" placeholder="Email Address" required>
-            <input type="Phone" placeholder="Phone Number" required>
-            <input type="text" placeholder="Email Subject" required>
-            <textarea name="" id="" placeholder="Your Message" required></textarea>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number">
+            <input type="text" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
           </div>
           <button type="submit" class="btn">Send message</button>
       </form>
       </div>
   </div>
-</seletion>
+</section>
 
 <script src="script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
